@@ -8,11 +8,11 @@ const Student = require('./models/student');
     console.log('Students tábla sikeresen létrehozva.');
     
     const students = await Student.bulkCreate([
-      { name: 'János', favorite_class: 'Math', school_year: 1, has_language_examination: false },
-      { name: 'Maris', favorite_class: 'Computer Science', school_year: 2, has_language_examination: true },
-      { name: 'Benedek', favorite_class: 'History', school_year: 3, has_language_examination: false },
-      { name: 'László', favorite_class: 'Math', school_year: 4,has_language_examination: true  },
-      { name: 'Éva', favorite_class: 'PE', school_year: 1, has_language_examination: false }
+      { name: 'János', favorite_class: 'Math', school_year: 10, has_language_examination: false },
+      { name: 'Maris', favorite_class: 'Computer Science', school_year: 13, has_language_examination: true },
+      { name: 'Benedek', favorite_class: 'History', school_year: 11, has_language_examination: false },
+      { name: 'László', favorite_class: 'Math', school_year: 12,has_language_examination: true  },
+      { name: 'Éva', favorite_class: 'PE', school_year: 10, has_language_examination: false }
     ]);
     console.log('Adatok sikeresen hozzáadva:', students);
 
